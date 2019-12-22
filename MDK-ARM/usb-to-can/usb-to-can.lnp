@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"usb-to-can\stm32f1xx_hal_msp.o"
+"usb-to-can\main.o"
+"usb-to-can\stm32f1xx_it.o"
+"usb-to-can\startup_stm32f103xb.o"
+"usb-to-can\stm32f1xx_hal_dma.o"
+"usb-to-can\stm32f1xx_hal_flash.o"
+"usb-to-can\stm32f1xx_hal_tim_ex.o"
+"usb-to-can\stm32f1xx_hal_rcc.o"
+"usb-to-can\stm32f1xx_hal_rcc_ex.o"
+"usb-to-can\stm32f1xx_hal_flash_ex.o"
+"usb-to-can\stm32f1xx_hal_cortex.o"
+"usb-to-can\stm32f1xx_hal_gpio_ex.o"
+"usb-to-can\stm32f1xx_hal_pwr.o"
+"usb-to-can\stm32f1xx_hal.o"
+"usb-to-can\stm32f1xx_hal_tim.o"
+"usb-to-can\stm32f1xx_hal_gpio.o"
+"usb-to-can\stm32f1xx_hal_uart.o"
+"usb-to-can\system_stm32f1xx.o"
+"usb-to-can\ieee754.o"
+"usb-to-can\crc8.o"
+"usb-to-can\jitbus.o"
+"usb-to-can\circular_buffer.o"
+--library_type=microlib --strict --scatter "usb-to-can\usb-to-can.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "usb-to-can.map" -o usb-to-can\usb-to-can.axf
